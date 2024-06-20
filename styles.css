@@ -48,9 +48,12 @@ header p {
     padding-left: 20px;
 }
 
+section {
+    padding: 50px 0;
+}
+
 #about {
-    padding-top: 20px;
-    overflow: hidden;
+    background-color: #fff;
 }
 
 #about h2 {
@@ -58,9 +61,13 @@ header p {
     padding-bottom: 20px;
 }
 
-#projects {
-    padding-top: 20px;
-    overflow: hidden;
+#skills ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#skills li {
+    margin-bottom: 10px;
 }
 
 #projects .project {
@@ -69,12 +76,65 @@ header p {
     background: #f4f4f4;
     border: #ccc 1px solid;
     float: left;
-    width: 31%;
+    width: calc(50% - 20px);
     transition: transform .2s ease-out;
 }
 
 #projects .project:hover {
     transform: translateY(-5px);
+}
+
+#contact {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#contact form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact form textarea {
+    resize: vertical;
+}
+
+#contact form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #555;
 }
 
 footer {
@@ -86,5 +146,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-
