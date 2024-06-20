@@ -1,1 +1,90 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #5c5c5c 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header h1 {
+    float: left;
+    display: inline;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+header p {
+    display: inline;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+#about {
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+#about h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#projects {
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+#projects .project {
+    margin: 10px;
+    padding: 20px;
+    background: #f4f4f4;
+    border: #ccc 1px solid;
+    float: left;
+    width: 31%;
+    transition: transform .2s ease-out;
+}
+
+#projects .project:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 
