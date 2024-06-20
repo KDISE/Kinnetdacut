@@ -1,13 +1,8 @@
 // Optional: Add JavaScript functionality
 
-// Example: Add a smooth scroll effect for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+// Example: Form submission handling (you may need to use a backend for real submissions)
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Replace alert with actual form submission logic (e.g., fetch API)
+    alert('Form submitted!'); 
 });
-
